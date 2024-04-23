@@ -1,6 +1,21 @@
 import streamlit as st
 from predict_page import model_dt,model_linear,model_gradient
 from explore_page import show_explore
+from annotated_text import annotated_text
+
+def annotated_message():
+    annotated_text(
+        ("🔵", "", ""),
+        ("Hey there,", " ", "#063"),
+        (" we developed ", " ", "#063"),
+        ("Software Developers", " ", "#217"),
+        ("Salary Predictor !", " ", "#217"),
+    )
+
+# Usage
+annotated_message()
+
+
 
 explore = st.sidebar.selectbox("Choose your option:",("Explore Data","Predict"))
 
