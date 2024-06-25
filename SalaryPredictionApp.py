@@ -1,5 +1,5 @@
 import streamlit as st
-from predict_page import model_dt,model_linear,model_gradient
+from predict_page_is import model_dt,model_linear,model_gradient
 from explore_page import show_explore
 from annotated_text import annotated_text
 
