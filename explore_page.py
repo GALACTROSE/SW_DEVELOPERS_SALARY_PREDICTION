@@ -35,7 +35,7 @@ def clean_education(x):
 
 
 #Function to load the dataset and clean the dataset using above function calls
-@st.cache
+@st.cache_data
 def load_data():
     df = pd.read_csv('survey_results_public.csv')
     df = df[["Country","EdLevel","YearsCodePro","Employment","ConvertedComp"]]
